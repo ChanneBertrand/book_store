@@ -17,11 +17,19 @@ RSpec.describe "/customers", type: :request do
   # Customer. As you add validations to Customer, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) {
-    skip("Add a hash of attributes valid for your model")
+    {
+      name: "Bob",
+      email: "bob@gmail.com",
+      is_admin: false
+    }
   }
 
   let(:invalid_attributes) {
-    skip("Add a hash of attributes invalid for your model")
+    {
+      name: nil,
+      email: 242388,
+      is_admin: false
+    }
   }
 
   # This should return the minimal set of values that should be in the headers

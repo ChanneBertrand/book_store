@@ -22,3 +22,8 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+NEXT TO DO: 
+
+create orders, order_items, payments and their tests.

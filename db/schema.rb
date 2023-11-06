@@ -21,9 +21,9 @@ ActiveRecord::Schema[7.1].define(version: 2023_10_16_094143) do
   end
 
   create_table "customers", force: :cascade do |t|
-    t.string "name"
-    t.string "email"
-    t.boolean "is_admin"
+    t.string "name", null: false
+    t.string "email", null: false
+    t.boolean "is_admin", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

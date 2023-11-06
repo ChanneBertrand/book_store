@@ -87,7 +87,7 @@ RSpec.describe "/books", type: :request do
     it "destroys the requested book" do
       book = Book.create! valid_attributes
       expect {
-        delete customer_url(book), headers: valid_headers, as: :json
+        delete book_url(book), headers: valid_headers, as: :json
       }.to change(Book, :count).by(-1)
     end
   end
